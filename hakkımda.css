@@ -1,0 +1,40 @@
+.hakkımdayazı{
+
+    width: 700px;
+    height: 700px;
+    margin-left: 400px;
+}
+.arkaplan{
+    background-color: black;
+}
+.baslık{
+    margin-top: 100px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-size: 70px;
+    width: 700px;
+    height: 100px;
+}
+.gif{
+    margin-top: 40px;
+    background: url(/Gif_Ayrma_Cubugu_M3L1H_10.gif);
+    width: 700px;
+    height: 5px;
+}
+.tanıtma{
+    margin-top: 10px;
+    height: 700px;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.ilgi{
+    line-height: 80px;
+    width: 700px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
