@@ -14,89 +14,90 @@
 <center><body class="renk">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
+          <a class="navbar-brand" href="#">Morte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active">Morte</a>
-                </li>
-                <li class="nav-item">
-                    <a target="_self" class="nav-link" href="index.html"><b>Anasayfa</b></a>
-                </li>
-                <li class="nav-item">
-                    <a target="_self" class="nav-link" href="hakkımda.html"><b>Hakkımda</b></a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav></center>
+      </nav>
 
-    <center><div class="yazı"><b>
+        <center><div class="hos mt-5">
             <script>
 
 
-                var text = "<font size=9><b>Hoş Geldin</b></font>" // Yazı 
-                var speed = 80 // Hız
-
-
-
-
-                if (document.all || document.getElementById) {
-                    document.write('<span id="highlight">' + text + '</span>')
-                    var storetext = document.getElementById ? document.getElementById("highlight") : document.all.highlight
+                var text="<font size=9><b>HOŞ GELDİN</b></font>" 
+                var speed=80
+                
+                
+                
+                
+                if (document.all||document.getElementById){
+                document.write('<span id="highlight">' + text + '</span>')
+                var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
                 }
                 else
-                    document.write(text)
-                var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
-                var r = 1
-                var g = 1
-                var b = 1
-                var seq = 1
-                function changetext() {
-                    rainbow = "#" + hex[r] + hex[g] + hex[b]
-                    storetext.style.color = rainbow
+                document.write(text)
+                var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+                var r=1
+                var g=1
+                var b=1
+                var seq=1
+                function changetext(){
+                rainbow="#"+hex[r]+hex[g]+hex[b]
+                storetext.style.color=rainbow
                 }
-                function change() {
-                    if (seq == 6) {
-                        b--
-                        if (b == 0)
-                            seq = 1
-                    }
-                    if (seq == 5) {
-                        r++
-                        if (r == 12)
-                            seq = 6
-                    }
-                    if (seq == 4) {
-                        g--
-                        if (g == 0)
-                            seq = 5
-                    }
-                    if (seq == 3) {
-                        b++
-                        if (b == 12)
-                            seq = 4
-                    }
-                    if (seq == 2) {
-                        r--
-                        if (r == 0)
-                            seq = 3
-                    }
-                    if (seq == 1) {
-                        g++
-                        if (g == 12)
-                            seq = 2
-                    }
-                    changetext()
+                function change(){
+                if (seq==6){
+                b--
+                if (b==0)
+                seq=1
                 }
-                function starteffect() {
-                    if (document.all || document.getElementById)
-                        flash = setInterval("change()", speed)
+                if (seq==5){
+                r++
+                if (r==12)
+                seq=6
+                }
+                if (seq==4){
+                g--
+                if (g==0)
+                seq=5
+                }
+                if (seq==3){
+                b++
+                if (b==12)
+                seq=4
+                }
+                if (seq==2){
+                r--
+                if (r==0)
+                seq=3
+                }
+                if (seq==1){
+                g++
+                if (g==12)
+                seq=2
+                }
+                changetext()
+                }
+                function starteffect(){
+                if (document.all||document.getElementById)
+                flash=setInterval("change()",speed)
                 }
                 starteffect()
-            </script>
-        </b></div></center>
-
-        <center><div class="iletisim"><b>İletişim İçin: lpowde@gmail.com</b></div></center>
-
-
+                </script>
+        </div>
+        <div class="ilet mt-5">İletişim İçin <br> lpowde@gmail.com</div>
+        </center>
 
 
 </body>
